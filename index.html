@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Localisation Test Presentation</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/alex.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section 
+					data-markdown
+					data-separator="-----"
+					data-separator-vertical="---"
+				> 
+					<textarea data-template>
+						## Welcome
+						
+						### This is a test presentation
+						
+						Specifically of [Reveal.js](https://revealjs.com/), which is a way to generate HTML slides, using either markdown or Javascript. 
+						
+						-----
+						
+						### This presentation has a few goals
+						1. Teach me how to use Reveal.js <!-- .element: class="fragment" -->
+						2. Give me a chance to connect it to Github <!-- .element: class="fragment" -->
+						3. Figure out quirks around resizing media <!-- .element: class="fragment" -->
+						4. See if it saves me time <!-- .element: class="fragment" -->
+						
+						-----
+						### Let's start with a picture a friend made for me
+						#### Now try navigating downwards to the sub-slide <!-- .element: class="fragment" -->
+						<section> 
+							<img class="r-stretch" src="img/alex_drawing.png"> 
+						</section>
+						---
+						## Hi
+						
+						You can hit ESC or 'O' to see an overview of the whole slideshow
+						
+						#### You can move on now 
+						
+						Go on... 
+						
+						-----
+						### Animations of Localisation
+						
+						_While this format can output to pdf, an advantage is that is can support videos_. Scroll down to see some animations I've made. 
+						
+						1. Anderson Localisation
+						2. Wannier-Stark Localisation
+
+						---
+						### Increasing linear potential applied to a length 20 chain
+						
+						<section>
+							<video controls class="r-stretch" src="img/gradient_localisationN20.mp4"></video>
+						</section>
+						---
+						### Random disorder on a chain of 20 sites
+						<section>
+							<video controls class="r-stretch" src="img/anderson_localisationN20.mp4"></video>
+						</section>
+						
+						-----
+						
+						#### We can also do some maths typesetting with MathJax
+						
+						$$ A = \frac{4}{3} \pi r^2 $$
+						
+						$$ |\Psi (t)\rangle =e^{-i{\hat {H}}t/\hbar }|\Psi (0)\rangle$$
+						
+						-----
+						#### Last but not least, code highlighting
+						
+						<section>
+						  <pre><code data-trim data-noescape data-line-numbers="1-6,15">
+						def fib(): #fibonacci sequence
+							x,y = 0,1
+							while True:
+								yield x
+								x,y = y, x+y
+						def even(seq): #evaluate if element is even
+							for number in seq:
+								if not number % 2:
+									yield number
+						def under_a_million(seq): #if <1million then add to sum
+							for number in seq:
+								if number > 1000000:
+									break
+								yield number   
+						print sum(even(under_a_million(fib())))
+						  </code></pre>
+						</section>
+					</textarea>
+				</section>
+				<section 
+					data-background-image="img/alex_drawing2.png" 
+					data-background-size=contain data-background-position=left
+					>
+					
+					<h3 class="r-fit-text">
+					That's all</h3>
+							
+					<h4 class="r-fit-text">Presentation by Alexandre Coates</h4>
+					
+					<a class="r-frame" href ="https://alexandrecoates.github.io">
+					PhD Website</a></p>
+					</class>
+				</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				margin: 0.1,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath]
+			});
+		</script>
+	</body>
+</html>
