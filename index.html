@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Localisation Test Presentation</title>
+		<title>PRISM Exeter 2021</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -16,17 +16,27 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<section data-markdown="example.md"
+					data-separator="^\r?\n\r?\n\r?\n"
+					data-separator-vertical="^\r?\n\r?\n"
+					data-separator-notes="^Note:"
+					data-charset="iso-8859-15">
+					<!--
+						Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
+						For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
+					-->
+				</section>
 				<section 
 					data-markdown
 					data-separator="-----"
 					data-separator-vertical="---"
 				> 
 					<textarea data-template>
-						## Welcome
+						## Hello Everyone
 						
-						### This is a test presentation
+						### I'm Alex
 						
-						Specifically of [Reveal.js](https://revealjs.com/), which is a way to generate HTML slides, using either markdown or Javascript. 
+						If you want to go through these slides on you own device, you can go to [alexandrecoates.github.io/prism-exeter-talk](https://alexandrecoates.github.io/prism-exeter-talk) and click through on your phone/laptop<!-- .element: class="fragment" -->
 						
 						-----
 						
