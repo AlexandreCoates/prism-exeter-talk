@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>PRISM Exeter 2021</title>
+		<title>Localisation Presentation</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -16,102 +16,15 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown="example.md"
-					data-separator="^\r?\n\r?\n\r?\n"
-					data-separator-vertical="^\r?\n\r?\n"
+				<section data-markdown="prism.md"
+					data-separator="^---"
+					data-separator-vertical="^--"
 					data-separator-notes="^Note:"
 					data-charset="iso-8859-15">
 					<!--
 						Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
 						For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
 					-->
-				</section>
-				<section 
-					data-markdown
-					data-separator="-----"
-					data-separator-vertical="---"
-				> 
-					<textarea data-template>
-						## Hello Everyone
-						
-						### I'm Alex
-						
-						If you want to go through these slides on you own device, you can go to [alexandrecoates.github.io/prism-exeter-talk](https://alexandrecoates.github.io/prism-exeter-talk) and click through on your phone/laptop<!-- .element: class="fragment" -->
-						
-						-----
-						
-						### This presentation has a few goals
-						1. Teach me how to use Reveal.js <!-- .element: class="fragment" -->
-						2. Give me a chance to connect it to Github <!-- .element: class="fragment" -->
-						3. Figure out quirks around resizing media <!-- .element: class="fragment" -->
-						4. See if it saves me time <!-- .element: class="fragment" -->
-						
-						-----
-						### Let's start with a picture a friend made for me
-						#### Now try navigating downwards to the sub-slide <!-- .element: class="fragment" -->
-						<section> 
-							<img class="r-stretch" src="img/alex_drawing.png"> 
-						</section>
-						---
-						## Hi
-						
-						You can hit ESC or 'O' to see an overview of the whole slideshow
-						
-						#### You can move on now 
-						
-						Go on... 
-						
-						-----
-						### Animations of Localisation
-						
-						_While this format can output to pdf, an advantage is that is can support videos_. Scroll down to see some animations I've made. 
-						
-						1. Anderson Localisation
-						2. Wannier-Stark Localisation
-
-						---
-						### Increasing linear potential applied to a length 20 chain
-						
-						<section>
-							<video controls class="r-stretch" src="img/gradient_localisationN20.mp4"></video>
-						</section>
-						---
-						### Random disorder on a chain of 20 sites
-						<section>
-							<video controls class="r-stretch" src="img/anderson_localisationN20.mp4"></video>
-						</section>
-						
-						-----
-						
-						#### We can also do some maths typesetting with MathJax
-						
-						$$ A = \frac{4}{3} \pi r^2 $$
-						
-						$$ |\Psi (t)\rangle =e^{-i{\hat {H}}t/\hbar }|\Psi (0)\rangle$$
-						
-						-----
-						#### Last but not least, code highlighting
-						
-						<section>
-						  <pre><code data-trim data-noescape data-line-numbers="1-6,15">
-						def fib(): #fibonacci sequence
-							x,y = 0,1
-							while True:
-								yield x
-								x,y = y, x+y
-						def even(seq): #evaluate if element is even
-							for number in seq:
-								if not number % 2:
-									yield number
-						def under_a_million(seq): #if <1million then add to sum
-							for number in seq:
-								if number > 1000000:
-									break
-								yield number   
-						print sum(even(under_a_million(fib())))
-						  </code></pre>
-						</section>
-					</textarea>
 				</section>
 				<section 
 					data-background-image="img/alex_drawing2.png" 

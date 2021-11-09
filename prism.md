@@ -1,15 +1,14 @@
-
 ## PRISM Exeter 2021
 
-1. Who am I?
-2. What do I do?
+---
+### An introduction
+
+I'm Alex (he/him), and
 
 ---
 
 ### Let's start with a picture a friend made for me
-
 #### Now try navigating downwards to the sub-slide <!-- .element: class="fragment" -->
-
 <section> 
     <img class="r-stretch" src="img/alex_drawing.png"> 
 </section>
@@ -40,7 +39,9 @@ _While this format can output to pdf, an advantage is that is can support videos
 <section>
     <video controls class="r-stretch" src="img/gradient_localisationN20.mp4"></video>
 </section>
+
 --
+
 ### Random disorder on a chain of 20 sites
 <section>
     <video controls class="r-stretch" src="img/anderson_localisationN20.mp4"></video>
